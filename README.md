@@ -1,28 +1,38 @@
 # LangGraph Quickstart
 
-A minimal LangGraph research graph. Clone, set your key, run.
+A minimal LangGraph research graph. Clone, set your key, deploy — done.
 
-## Run in 3 steps
+## Deploy in 3 steps
 
 ### 1. Clone & install
 
 ```bash
 git clone https://github.com/Crewship/langgraph-quickstart.git
 cd langgraph-quickstart
+pip install crewship
 pip install -e .
 ```
 
 ### 2. Set your API key
 
 ```bash
-cp .env.example .env   # add your OPENAI_API_KEY
+crewship env set OPENAI_API_KEY=sk-...
 ```
 
 > **Using a different provider?** Swap the `ChatOpenAI` import in `graph.py` and set the matching key — e.g. `ANTHROPIC_API_KEY` for Claude, `GROQ_API_KEY` for Groq (free tier).
 
-### 3. Run
+### 3. Deploy
 
 ```bash
+crewship deploy
+```
+
+That's it. Your research graph is live.
+
+## Run locally (optional)
+
+```bash
+cp .env.example .env   # add your OPENAI_API_KEY
 python main.py
 ```
 
