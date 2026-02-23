@@ -7,7 +7,7 @@ A minimal LangGraph research graph. Clone, set your key, run.
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/vhalasi/langgraph-quickstart.git
+git clone https://github.com/Crewship/langgraph-quickstart.git
 cd langgraph-quickstart
 pip install -e .
 ```
