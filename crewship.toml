@@ -1,0 +1,11 @@
+[deployment]
+framework = "langgraph"
+entrypoint = "graph:graph"
+profile = "slim"
+python = "3.11"
+
+[build]
+exclude = [ "tests" ]
+
+[crewship]
+deployment_id = "dep_xhym5yq2b9t4"
