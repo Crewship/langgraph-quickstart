@@ -9,7 +9,8 @@ A minimal LangGraph research graph. Clone, set your key, deploy — done.
 ```bash
 git clone https://github.com/Crewship/langgraph-quickstart.git
 cd langgraph-quickstart
-pip install crewship
+# install Crewship CLI tool
+curl -fsSL crewship.dev/install | bash
 pip install -e .
 ```
 
